@@ -21,7 +21,7 @@ sudo make install prefix=/usr/share/tarantool/
 ```
 
 ### Usage
-Anywhere in lua code you can set a brakepoint
+Anywhere in lua code you can set a breakpoint
 ```lua
 require('tdb').start()
 ```
