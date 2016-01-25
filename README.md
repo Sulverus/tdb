@@ -14,7 +14,7 @@
 
 ### Install
 ```
-git clone https://github.com/Sulverus/tdb
+git clone --recursive https://github.com/Sulverus/tdb
 cd tdb
 make
 sudo make install prefix=/usr/share/tarantool/
