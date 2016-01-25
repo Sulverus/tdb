@@ -1,0 +1,3 @@
+[submodule "ansicolors"]
+	path = ansicolors
+	url = https://github.com/hoelzro/ansicolors
