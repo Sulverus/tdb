@@ -65,7 +65,7 @@ Example for `test/test.lua` interactive debugging
 ```
 $ tarantool test.lua 
 (TDB) Tarantool debugger v.0.0.3. Type h for help
-(TDB) [/Users/karchers/tarantool/scrums/tdb/tdb/build/../test/test.lua]
+(TDB) [/home/Sulverus/tdb/test/test.lua]
 (TDB) 14: local a = 1
 (TDB)>
 (TDB) 15: local b = 2
