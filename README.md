@@ -1,5 +1,5 @@
 # tdb
-Tarantool interactive debugger. Compatible with: 
+[Tarantool](https://github.com/tarantool/tarantool) database interactive debugger. Compatible with: 
 * 1.6.7
 * 1.6.8
 * 1.7.x
@@ -28,16 +28,16 @@ require('tdb').start()
 
 **Commands:**
 
-**n** - next line
-**c** - continue
-**bt** - traceback
-**locals** - get local context
-**globals** - get global scope
-**e** - enter to eval mode
-**-e** - return to default mode
-**f** - fiber info
-**q** - exit
-**h** - help
+* **n** - next line
+* **c** - continue
+* **bt** - traceback
+* **locals** - get local context
+* **globals** - get global scope
+* **e** - enter to eval mode
+* **-e** - return to default mode
+* **f** - fiber info
+* **q** - exit
+* **h** - help
 
 **Eval mode**
 
