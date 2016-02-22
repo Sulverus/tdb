@@ -79,6 +79,9 @@ local commands = {
 
 -- check that running code is in context
 local function is_traced_code(s)
+    if s.short_src == nil then
+        return false
+    end
     local path, file, _ = string.match(s.short_src, utils.path_regex)
     local path2, arg_file, _ = string.match(arg[0], utils.path_regex)
 
