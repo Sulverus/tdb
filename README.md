@@ -1,5 +1,5 @@
 # tdb
-Tarantool interactive debugger. Compatible with: 
+[Tarantool](https://github.com/tarantool/tarantool) database interactive debugger. Compatible with: 
 * 1.6.7
 * 1.6.8
 * 1.7.x
@@ -14,30 +14,30 @@ Tarantool interactive debugger. Compatible with:
 
 ### Install
 ```
-git clone https://github.com/Sulverus/tdb
+git clone --recursive https://github.com/Sulverus/tdb
 cd tdb
 make
 sudo make install prefix=/usr/share/tarantool/
 ```
 
 ### Usage
-Anywhere in lua code you can set a brakepoint
+Anywhere in lua code you can set a breakpoint
 ```lua
 require('tdb').start()
 ```
 
 **Commands:**
 
-**n** - next line
-**c** - continue
-**bt** - traceback
-**locals** - get local context
-**globals** - get global scope
-**e** - enter to eval mode
-**-e** - return to default mode
-**f** - fiber info
-**q** - exit
-**h** - help
+* **n** - next line
+* **c** - continue
+* **bt** - traceback
+* **locals** - get local context
+* **globals** - get global scope
+* **e** - enter to eval mode
+* **-e** - return to default mode
+* **f** - fiber info
+* **q** - exit
+* **h** - help
 
 **Eval mode**
 
@@ -65,7 +65,7 @@ Example for `test/test.lua` interactive debugging
 ```
 $ tarantool test.lua 
 (TDB) Tarantool debugger v.0.0.3. Type h for help
-(TDB) [/Users/karchers/tarantool/scrums/tdb/tdb/build/../test/test.lua]
+(TDB) [/home/Sulverus/tdb/test/test.lua]
 (TDB) 14: local a = 1
 (TDB)>
 (TDB) 15: local b = 2
