@@ -26,6 +26,8 @@ local function trim(s)
     return s:match("^%s*(.-)%s*$")
 end
 
+local gfind = string.gfind or string.gmatch
+
 local function print_table(t)
     for key, val in pairs(t) do
         print(key, val)
@@ -51,7 +53,7 @@ function split(str, delim)
         return { str }
     end
     local result,pat,lastpos = {},"(.-)" .. delim .. "()",nil
-    for part, pos in string.gfind(str, pat) do
+    for part, pos in gfind(str, pat) do
         table.insert(result, part)
         lastpos = pos
     end
